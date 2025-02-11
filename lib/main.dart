@@ -48,7 +48,12 @@ class MyAppState extends ChangeNotifier {
 
 // ...
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -129,8 +134,6 @@ class GeneratorPage extends StatelessWidget {
     );
   }
 }
-
-// ...
 
 class BigCard extends StatelessWidget {
   const BigCard({

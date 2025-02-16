@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         title: 'Namer App',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 40, 61, 152)),
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 84, 186, 229)),
         ),
         home: MyHomePage(),
       ),
@@ -63,10 +63,8 @@ var selectedIndex = 0; // tutorial says "var selectedIndex = 0"
 switch (selectedIndex) {
   case 0:
     page = GeneratorPage();
-    break;
   case 1:
     page = FavoritesPage();
-    break;
   default:
     throw UnimplementedError('no widget for $selectedIndex');
 }
